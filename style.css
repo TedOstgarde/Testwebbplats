@@ -1,8 +1,8 @@
 body {
   display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas:
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas:
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
@@ -12,27 +12,29 @@ body {
     "b b b b b b c c c c c c"
     "b b b b b b c c c c c c"
     "b b b b b b c c c c c c"
-    "d d d d d d d d d d d d"
-    "d d d d d d d d d d d d"
     "d d d d d d d d d d d d";
-    grid-gap: 10px;
+  grid-gap: 10px;
 }
 
 @media screen and (max-width: 480px) {
 
   /* OBS kan stå annat här */
-body {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+  body {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     grid-template-areas:
-    "a a a"
-    "b b b"
-    "b b b"
-    "c c c"
-    "c c c"
-    "d d d"
+      "a a a a a a"
+      "b b b b b b"
+      "b b b b b b"
+      "b b b b b b"
+      "b b b b b b"
+      "b b b b b b"
+      "c c c c c c"
+      "c c c c c c"
+      "d d d d d d"
   }
 }
+
 p {
   /*färg på text*/
 }
