@@ -1,6 +1,8 @@
 body {
-  display:
-    grid-template-columns: repeat(12, 1fr) grid-template-rows: repeat(12, 1fr) grid-template-areas: "a a a a a a a a a a a a"
+  display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas:
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
     "a a a a a a a a a a a a"
@@ -12,18 +14,26 @@ body {
     "b b b b b b c c c c c c"
     "d d d d d d d d d d d d"
     "d d d d d d d d d d d d"
+    "d d d d d d d d d d d d";
     grid-gap: 10px;
 }
 
-@media screen and (min-width:) {
+@media screen and (min-width: 480px) {
 
   /* OBS kan stå annat här */
-  body {
-    grid-template-columns:
-      grid-template-areas: grid-gap:
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+    "a a a"
+    "b b b"
+    "b b b"
+    "c c c"
+    "c c c"
+    "d d d"
   }
 }
-
 p {
   /*färg på text*/
 }
@@ -50,14 +60,21 @@ aside {
 footer {
   background-color: white;
   grid-area: d;
+  text-align: center;
 }
 
 img#sea {
-  width: ;
-  max-width: ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /*max-width: 400px;*/
 }
 
 img#html {
-  width: ;
-  max-width: ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /*max-width: 400px;*/
 }
